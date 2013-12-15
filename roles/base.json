@@ -1,0 +1,13 @@
+{
+    "name" : "base",
+    "chef_type" : "role",
+    "json_class" : "Chef::Role",
+    "run_list" : [
+      "recipe[hello]",
+      "recipe[zsh]",
+      "recipe[vim]",
+      "recipe[tmux]",
+      "recipe[home]",
+      "recipe[ssh]"
+    ]
+}
