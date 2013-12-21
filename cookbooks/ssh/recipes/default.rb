@@ -19,7 +19,7 @@ end
 
 directory '/var/run/sshd' do
   owner 'root'
-  group 'td-agent'
+  group 'root'
   mode '0755 '
   action :create
 end
