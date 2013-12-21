@@ -16,7 +16,7 @@ end
 Dir["/home/mzp/home/dotfiles/*"].each do|file|
   bash "install #{File.basename(file)}" do
     code <<-END
-      rm -rf ~mzp/#{File.basename(file)}
+      rm -rf ~mzp/.#{File.basename(file)}
       ln -s #{file} ~mzp/.#{File.basename(file)}
     END
   end
