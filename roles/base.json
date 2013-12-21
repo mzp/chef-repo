@@ -8,6 +8,7 @@
       "recipe[vim]",
       "recipe[tmux]",
       "recipe[home]",
-      "recipe[ssh]"
+      "recipe[ssh]",
+      "recipe[locales]"
     ]
 }
