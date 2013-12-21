@@ -6,6 +6,12 @@
 #
 # All rights reserved - Do Not Redistribute
 
+%w(libssl-dev libreadline-dev).each do|name|
+  package name do
+    action :install
+  end
+end
+
 git "/home/mzp/.rbenv" do
   repository "https://github.com/sstephenson/rbenv.git"
   reference "master"
