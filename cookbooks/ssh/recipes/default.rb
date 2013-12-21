@@ -16,3 +16,10 @@ template "/etc/ssh/sshd_config" do
   group "root"
   mode 0644
 end
+
+directory '/var/run/sshd' do
+  owner 'root'
+  group 'td-agent'
+  mode '0755 '
+  action :create
+end
