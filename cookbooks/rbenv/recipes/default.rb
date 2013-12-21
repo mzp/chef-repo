@@ -42,3 +42,14 @@ template "/home/mzp/profiles/rbenv.profile" do
   group "mzp"
   mode 0644
 end
+
+%w(2.1.0-rc1).each do|version|
+  bash "install #{version}" do
+    user "mzp"
+    environment({ 'HOME' => '/home/mzp' })
+    code <<-END
+      source /home/mzp/profiles/rbenv.profile
+      rbenv install #{version}
+    END
+  end
+end
