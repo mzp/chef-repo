@@ -6,6 +6,7 @@
       "recipe[rbenv]",
       "recipe[mongodb]",
       "recipe[sqlite]",
-      "recipe[libxml]"
+      "recipe[libxml]",
+      "recipe[heroku]"
     ]
 }
