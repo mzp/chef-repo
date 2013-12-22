@@ -12,6 +12,22 @@
   end
 end
 
-bash "install ocamlbrew" do
-  code "curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash"
+unless File.exist?("/home/mzp/ocamlbrew")
+  bash "install ocamlbrew" do
+    code "curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash"
+  end
+end
+
+directory '/home/mzp/profiles' do
+  owner 'mzp'
+  group 'mzp'
+  mode '0755 '
+  action :create
+end
+
+template "/home/mzp/profiles/ocamlbrew.profile" do
+  source "ocamlbrew.profile"
+  owner "mzp"
+  group "mzp"
+  mode 0644
 end
