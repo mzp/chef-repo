@@ -4,6 +4,8 @@
     "json_class" : "Chef::Role",
     "run_list" : [
       "recipe[rbenv]",
-      "recipe[mongodb]"
+      "recipe[mongodb]",
+      "recipe[sqlite]",
+      "recipe[libxml]"
     ]
 }
