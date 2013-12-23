@@ -21,3 +21,10 @@ Dir["/home/mzp/home/dotfiles/*"].each do|file|
     END
   end
 end
+
+directory '/home/mzp/profiles' do
+  owner 'mzp'
+  group 'mzp'
+  mode '0755 '
+  action :create
+end
