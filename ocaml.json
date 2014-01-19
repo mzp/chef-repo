@@ -1,6 +1,6 @@
 {
   "run_list" : [
-    "role[ocaml]",
-    "role[base]"
+    "role[base]",
+    "recipe[ocamlbrew]"
   ]
 }

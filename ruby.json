@@ -1,5 +1,10 @@
 {
   "run_list" : [
-    "role[ruby]"
+    "role[base]",
+    "recipe[rbenv]",
+    "recipe[mongodb]",
+    "recipe[sqlite]",
+    "recipe[libxml]",
+    "recipe[heroku]"
   ]
 }
