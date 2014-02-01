@@ -1,0 +1,10 @@
+$TTL 1D
+@	IN SOA	@ home.local. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+	IN	NS	home.local.
+@	IN	A	192.168.12.10  
+ns	IN	A	192.168.12.10  

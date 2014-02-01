@@ -1,2 +1,2 @@
 file_cache_path "/tmp/chef-solo"
-cookbook_path ["/home/mzp/chef-repo/cookbooks"]
+cookbook_path ["/home/mzp/chef-repo/cookbooks", "/root/chef-repo/cookbooks"]
