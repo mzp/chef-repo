@@ -30,7 +30,3 @@ template "/var/named/named.local" do
   group "named"
   mode '0644'
 end
-
-service "named" do
-  action [:enable, :restart]
-end
