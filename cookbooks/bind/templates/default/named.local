@@ -6,5 +6,10 @@ $TTL 1D
 					1W	; expire
 					3H )	; minimum
 	IN	NS	home.local.
-@	IN	A	192.168.12.10
-ns	IN	A	192.168.12.10
+@       IN A 192.168.12.10
+ns      IN A 192.168.12.10
+gw      IN A 192.168.11.1
+xen     IN A 192.168.11.2
+vm      IN A 192.168.13.3
+sandbox IN A 192.168.13.51
+ruby    IN A 192.168.13.52
