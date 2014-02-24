@@ -13,3 +13,4 @@ xen     IN A 192.168.11.2
 vm      IN A 192.168.13.3
 sandbox IN A 192.168.13.51
 ruby    IN A 192.168.13.52
+ocaml   IN A 192.168.13.53
