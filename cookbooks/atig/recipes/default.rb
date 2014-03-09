@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-%w(ruby rubygems ruby-dev libsqlite3-dev ca-certificates).each do|name|
+%w(ruby2.0-dev libsqlite3-dev ca-certificates).each do|name|
   package name do
     action :install
   end
