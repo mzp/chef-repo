@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-%w(ruby2.0 ruby2.0-dev build-essential libsqlite3-dev ca-certificates).each do|name|
+%w(ruby ruby-all-dev build-essential libsqlite3-dev ca-certificates).each do|name|
   package name do
     action :install
   end
