@@ -16,10 +16,6 @@ git "/root/asig" do
   repository "http://github.com/mzp/asig"
 end
 
-bash "init opam" do
-  code "opam init"
-end
-
 bash "build asig" do
   code <<-END
   source /root/.opam/opam-init/init.sh
