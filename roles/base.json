@@ -10,6 +10,7 @@
       "recipe[tmux]",
       "recipe[home]",
       "recipe[ssh]",
-      "recipe[locales]"
+      "recipe[locales]",
+      "recipe[irssi]"
     ]
 }
