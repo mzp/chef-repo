@@ -1,7 +1,6 @@
 {
   "run_list" : [
     "recipe[atig]",
-    "recipe[asig]",
     "recipe[znc]"
   ]
 }
