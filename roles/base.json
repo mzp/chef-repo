@@ -11,6 +11,7 @@
       "recipe[home]",
       "recipe[ssh]",
       "recipe[locales]",
-      "recipe[irssi]"
+      "recipe[irssi]",
+      "recipe[hg]"
     ]
 }
