@@ -14,7 +14,7 @@ end
 
 unless File.exist?("/home/mzp/ocamlbrew")
   bash "install ocamlbrew" do
-    code "curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash"
+    code "curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | sudo -u mzp bash"
   end
 end
 
