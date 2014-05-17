@@ -14,3 +14,7 @@ vm      IN A 192.168.13.3
 sandbox IN A 192.168.13.51
 ruby    IN A 192.168.13.52
 ocaml   IN A 192.168.13.53
+haskell IN A 192.168.13.54
+sid IN A 192.168.13.55
+sml IN A 192.168.13.56
+review IN A 192.168.13.57
