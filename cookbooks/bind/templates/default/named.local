@@ -7,6 +7,7 @@ $TTL 1D
 					3H )	; minimum
 	IN	NS	home.local.
 @       IN A 192.168.12.10
+storage IN A 192.168.11.51
 ns      IN A 192.168.12.10
 gw      IN A 192.168.11.1
 xen     IN A 192.168.11.2
