@@ -16,9 +16,14 @@ template '/etc/samba/smb.conf' do
   owner "root"
   group "root"
 
-  notifies :restart, "service[samba]"
+  notifies :restart, "service[smb]"
+  notifies :restart, "service[nmb]"
 end
 
-service 'samba' do
+service 'smb' do
+  action [:enable, :start]
+end
+
+service 'nmb' do
   action [:enable, :start]
 end
