@@ -30,14 +30,12 @@ end
 
 directory '/export' do
   owner 'nobody'
-  group 'root'
-  mode  '0666'
+  group 'nobody'
   action :create
 end
 
 directory '/export/public' do
   owner 'nobody'
-  group 'root'
-  mode  '0666'
+  group 'nobody'
   action :create
 end
