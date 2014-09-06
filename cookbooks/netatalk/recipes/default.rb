@@ -50,7 +50,7 @@ template '/etc/afp.conf' do
   group "root"
 end
 
-%w(avahi-daemon avahi-dnsconfd netatalk).each do|svc|
+%w(messagebus avahi-daemon avahi-dnsconfd netatalk).each do|svc|
   service svc do
     action [:enable, :start]
   end
