@@ -49,3 +49,10 @@ template '/etc/afp.conf' do
   owner "root"
   group "root"
 end
+
+%w(avahi-daemon avahi-dnsconfd netatalk).each do|svc|
+  service svc do
+    action [:enable, :start]
+  end
+end
+
