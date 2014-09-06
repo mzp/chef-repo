@@ -43,13 +43,3 @@ directory '/export/private' do
   owner 'nobody'
   action :create
 end
-
-# ----
-user 'mzp' do
-  action :create
-end
-
-directory '/export/private/mzp' do
-  owner 'mzp'
-  action :create
-end
