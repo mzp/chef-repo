@@ -9,3 +9,11 @@
 package "zsh" do
   action :install
 end
+
+git "/home/mzp/.zaw" do
+  repository "https://github.com/zsh-users/zaw"
+  reference "master"
+  action :sync
+  user "mzp"
+  group "mzp"
+end
