@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 
-%w(libssl-dev libreadline-dev).each do|name|
+%w(libffi-dev libssl-dev libreadline-dev).each do|name|
   package name do
     action :install
   end
