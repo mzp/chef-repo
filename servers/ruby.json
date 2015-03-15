@@ -5,6 +5,13 @@
     "recipe[mongodb]",
     "recipe[sqlite]",
     "recipe[libxml]",
-    "recipe[heroku]"
+    "recipe[heroku]",
+    "recipe[mysql]",
+    "recipe[node]",
+    "recipe[xvfb]",
+    "recipe[qt]",
+    "recipe[icu]",
+    "recipe[imagemagick]",
+    "recipe[wkhtml]"
   ]
 }
