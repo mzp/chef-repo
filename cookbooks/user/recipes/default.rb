@@ -8,6 +8,7 @@
 #
 
 user 'mzp' do
+  shell '/bin/bash'
   action :create
 end
 
