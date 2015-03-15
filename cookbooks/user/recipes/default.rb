@@ -11,15 +11,15 @@ user 'mzp' do
   action :create
 end
 
-bash 'make as sudoers' do
-  code 'usermod -G mzp,sudo mzp'
-end
-
 bash 'make .ssh' do
   code <<END
 mkdir -p /home/mzp/.ssh
 chown -R mzp:mzp /home/mzp
 END
+end
+
+template '/etc/sudoers.d/mzp' do
+  source 'sudoers'
 end
 
 template '/home/mzp/.ssh/authorized_keys' do
