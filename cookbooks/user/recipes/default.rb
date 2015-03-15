@@ -16,8 +16,10 @@ bash 'make as sudoers' do
 end
 
 bash 'make .ssh' do
-  code 'mkdir -p /home/mzp/.ssh'
-  code 'chown -R mzp:mzp /home/mzp'
+  code <<END
+mkdir -p /home/mzp/.ssh
+chown -R mzp:mzp /home/mzp
+END
 end
 
 template '/home/mzp/.ssh/authorized_keys' do
