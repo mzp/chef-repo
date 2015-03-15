@@ -2,7 +2,6 @@
   "run_list" : [
     "role[base]",
     "recipe[rbenv]",
-    "recipe[mongodb]",
     "recipe[sqlite]",
     "recipe[libxml]",
     "recipe[heroku]",
