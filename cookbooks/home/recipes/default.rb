@@ -6,6 +6,10 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+package 'ruby' do
+  action :install
+end
+
 git "/home/mzp/home" do
   repository "https://github.com/mzp/home"
   reference "master"
@@ -13,13 +17,15 @@ git "/home/mzp/home" do
   user "mzp"
   group "mzp"
 end
-Dir["/home/mzp/home/dotfiles/*"].each do|file|
-  bash "install #{File.basename(file)}" do
-    code <<-END
-      rm -rf ~mzp/.#{File.basename(file)}
-      ln -s #{file} ~mzp/.#{File.basename(file)}
-    END
+
+bash "install dotfiles" do
+  shell = []
+  Dir["/home/mzp/home/dotfiles/*"].each do|file|
+    shell << "rm -rf ~mzp/.#{File.basename(file)}"
+    shell << "ln -s #{file} ~mzp/.#{File.basename(file)}"
   end
+
+  code shell.join("\n")
 end
 
 directory '/home/mzp/profiles' do
